@@ -26,7 +26,8 @@ Using these tools, I have performed the following steps:
 - I filtered out low-quality nuclei based on the number of genes, UMIs, mitochondrial reads, and doublets.
 - I integrated the individual samples using scvi's `scvi.data.setup_anndata` and `scvi.model.SCVI` functions to create a latent representation that accounts for batch effects.
 - I performed dimensionality reduction using scanpy's `sc.tl.umap` function to obtain a UMAP embedding of the integrated data.
-- I performed clustering using scanpy's `sc.tl.leiden` function to identify cell types based on their gene expression profiles.
+- I performed clustering using scanpy's `sc.tl.leiden` function.
+- I performed manual annotation of the resulting cell clusters based on their gene expression profiles.
 - I performed differential expression analysis using scvi's `scvi.model.SCVI.differential_expression` function to compare gene expression between clusters or conditions.
 - I performed gene set enrichment analysis using scanpy's `sc.tl.rank_genes_groups` function to identify enriched pathways or signatures in each cluster or condition.
 - I performed Gene Ontology (GO) enrichment analysis and KEGG pathway analysis using the GO_Biological_Process_2023 and KEGG_2021_Human libraries.
