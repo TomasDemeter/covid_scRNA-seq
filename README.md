@@ -33,6 +33,7 @@ Using these tools, I have performed the following steps:
 - I performed Gene Ontology (GO) enrichment analysis and KEGG pathway analysis using the GO_Biological_Process_2023 and KEGG_2021_Human libraries.
 - I performed ETV5 gene expression comparison between controls and COVID19 samples and determined statistical significance using Mann–Whitney U test.
 - I performed gene signatures scoring using scanpy’s `sc.tl.score_genes` function. To calculate a score for each cell based on the average expression of a set of genes, normalized by the average expression of a set of control genes.
+- I performed B cell heavy and light chain analysis with two different approaches. First approach is searching for top heavy and light coexpressed chains pairs. The second is searching for the heavy and light chains with the highest expression separately and then looking for the pairs.
 
 : Melms JC et al. A molecular single-cell lung atlas of lethal COVID-19. Nature. 2021 Jul;595(7865):114-119. doi: 10.1038/s41586-021-03569-1. Epub 2021 Apr 29. PMID: 33915569; PMCID: PMC8084440.
 
